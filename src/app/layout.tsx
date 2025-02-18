@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Inter, Calistoga } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { twMerge } from "tailwind-merge";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const calistoga = Calistoga({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
   title: "Akshay Kumar",
@@ -14,7 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body
+        className={twMerge(
+          inter.variable,
+          calistoga.variable,
+          "antialiased bg-gray-900 text-white font-sans"
+        )}
+      >
         {children}
         <Analytics />
       </body>
