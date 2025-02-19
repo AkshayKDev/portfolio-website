@@ -6,9 +6,6 @@ const Header = () => {
           Home
         </a>
         <a href="" className="nav-item">
-          About
-        </a>
-        <a href="" className="nav-item">
           Services
         </a>
         <a href="" className="nav-item">
