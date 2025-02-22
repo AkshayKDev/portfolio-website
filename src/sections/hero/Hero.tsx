@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border border-red-500">
         <StarIcon className="text-emerald-300" />
       </div>
-      <div className="container">
+      <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <Image src={computerImage} className="size-[100px]" alt="" />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-2 rounded-lg">
