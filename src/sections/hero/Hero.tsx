@@ -16,12 +16,14 @@ const Hero = () => {
         className="absolute inset-0 -z-30 opacity-5"
         style={{ backgroundImage: `url(${grainImage.src})` }}
       />
-      <div className="lg:size-[620px] hero-ring" />
-      <div className="lg:size-[820px] hero-ring" />
-      <div className="lg:size-[1020px] hero-ring" />
-      <div className="lg:size-[1220px] hero-ring" />
+      <div className="size-[620px] hero-ring" />
+      <div className="size-[820px] hero-ring" />
+      <div className="size-[1020px] hero-ring" />
+      <div className="size-[1220px] hero-ring" />
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border border-red-500">
-        <StarIcon className="text-emerald-300" />
+        <div>
+        <StarIcon width={112} height={112} className="w-28 h-28 text-emerald-300 block" />
+        </div>
       </div>
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
